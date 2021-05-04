@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="9dp"
+    android:layout_marginBottom="9dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+        <LinearLayout
+            android:id="@+id/linearLayoutHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum = "5"
+            >
+
+
+            <TextView
+                android:id="@+id/stateId"
+                android:layout_width="10dip"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_weight="2"
+                android:textAlignment="center"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/confirmedId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="#E07C24"
+                android:fontFamily="casual"
+                />
+
+            <TextView
+                android:id="@+id/activeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:fontFamily="casual"
+                />
+
+            <TextView
+                android:id="@+id/recoveredId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="#00D84A"
+                android:fontFamily="casual"
+                />
+
+            <TextView
+                android:id="@+id/deathsId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#E21717"
+                android:textAlignment="center"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="casual"
+                />
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
